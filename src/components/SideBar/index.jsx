@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Item from '../Item';
-import { Links } from '../../Data/Links';
+import {Links} from '../../Data/Links';
+import SubItem from "../SubItem";
 import styles from '../../styles/Sidebar/Sidebar.module.scss';
 
 const Sidebar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState (false);
 
   return (
     <div className={open ? styles.sidebarOpen : styles.sidebar}>
       <svg
         className={styles.hamburger}
-        onClick={() => setOpen(!open)}
+        onClick={() => setOpen (!open)}
         viewBox="0 0 18 12"
       >
         <path
@@ -20,7 +21,7 @@ const Sidebar = () => {
       </svg>
       <div className={styles.linksContainer}>
         {Links &&
-          Links.map(({ to, text, svg }) => (
+          Links.map (({to, text, svg}) => (
             <Item to={to} text={text} svg={svg} open={open} />
           ))}
       </div>

@@ -1,7 +1,45 @@
 export const Links = [
   {
-    to: '/panel',
-    text: 'Panel',
+    text: "Panel",
+    more: true,
+    links: [
+      {
+        to: "/panel1",
+        text: "Panel1",
+        svg: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 11.1111H8.88889V0H0V11.1111ZM0 20H8.88889V13.3333H0V20ZM11.1111 20H20V8.88889H11.1111V20ZM11.1111 0V6.66667H20V0H11.1111Z"
+              fill="#8F8F8F"
+            />
+          </svg>
+        ),
+      },
+      {
+        to: "/panel2",
+        text: "Panel2",
+        svg: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 11.1111H8.88889V0H0V11.1111ZM0 20H8.88889V13.3333H0V20ZM11.1111 20H20V8.88889H11.1111V20ZM11.1111 0V6.66667H20V0H11.1111Z"
+              fill="#8F8F8F"
+            />
+          </svg>
+        ),
+      },
+    ],
     svg: (
       <svg
         width="20"
@@ -18,8 +56,8 @@ export const Links = [
     ),
   },
   {
-    to: '/contenido',
-    text: 'Contenido',
+    to: "/contenido",
+    text: "Contenido",
     svg: (
       <svg
         width="20"
@@ -36,8 +74,8 @@ export const Links = [
     ),
   },
   {
-    to: '/listas',
-    text: 'Listas',
+    to: "/listas",
+    text: "Listas",
     svg: (
       <svg
         width="20"
@@ -54,8 +92,8 @@ export const Links = [
     ),
   },
   {
-    to: '/estadisticas',
-    text: 'Estadísticas',
+    to: "/estadisticas",
+    text: "Estadísticas",
     svg: (
       <svg
         width="20"
@@ -72,8 +110,8 @@ export const Links = [
     ),
   },
   {
-    to: '/comentarios',
-    text: 'Comentarios',
+    to: "/comentarios",
+    text: "Comentarios",
     svg: (
       <svg
         width="20"
